@@ -42,4 +42,5 @@ La fuente contractual se mantiene fuera del repositorio mediante `.gitignore`; s
 - `docs/DECISIONS.md`: decisiones técnicas y de producto de esta versión.
 - `docs/TASKS.md`: tareas priorizadas para convertir la demo en producción.
 - `docs/IMAGE_ASSETS.md`: procedencia y prompts de los recursos visuales.
+- `docs/STATUS.md`: estado de implementación, pruebas y conexión con GitHub.
 
