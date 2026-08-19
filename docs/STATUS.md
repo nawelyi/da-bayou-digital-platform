@@ -5,16 +5,16 @@ Actualizado: 18 de agosto de 2026.
 ## Implementación
 
 - **Versión:** 0.1, primera demo para aprobación del cliente.
-- **Rama local:** `agent/first-client-demo`.
-- **Estado del árbol:** limpio después de los commits indicados abajo.
+- **Rama publicada:** `main`.
+- **Repositorio:** público para permitir la demostración mediante GitHub Pages.
+- **Demo pública:** https://nawelyi.github.io/da-bayou-digital-platform/
 - **Servidor local:** `http://127.0.0.1:4173` con `npm run dev`.
 
 ## Commits
 
-- `6512c30` — `document client-review MVP scope`
-- `374575d` — `build first client-review website demo`
-
-Este archivo se registra en un tercer commit de estado y validación.
+- `f1a38a6` — `document client-review MVP scope`
+- `0010e78` — `build first client-review website demo`
+- `efe144e` — `record demo validation status`
 
 ## Validación completada
 
@@ -25,15 +25,17 @@ Este archivo se registra en un tercer commit de estado y validación.
 - menú: tabs por click y estado visible/oculto verificados;
 - Customer Club: nombre, email, consentimiento y confirmación local verificados;
 - consola del navegador: sin errores ni warnings.
+- versión alojada en GitHub Pages abierta y revisada con imágenes y estilos cargados.
 
 ## GitHub
 
 - Cuenta autenticada en la conexión integrada: `nawelyi`.
 - Repositorio objetivo: `nawelyi/da-bayou-digital-platform`.
 - Remoto local `origin`: `https://github.com/nawelyi/da-bayou-digital-platform.git`.
-- Permiso general del plugin GitHub: permite acciones de bajo riesgo y usa la configuración predeterminada.
-- Bloqueo actual: la conexión devuelve cero repositorios autorizados y el repositorio privado responde `404`; el acceso HTTPS local tampoco tiene credenciales.
+- El conector de Codex está autorizado únicamente para este repositorio y tiene acceso de escritura.
+- GitHub Pages publica `main` desde `/(root)` y exige HTTPS.
+- Cada cambio aprobado seguirá el flujo: editar, validar, crear un commit claro, actualizar `main` y comprobar la publicación.
 
-## Siguiente acción única
+## Siguiente etapa
 
-Autorizar `nawelyi/da-bayou-digital-platform` para la conexión GitHub usada por Codex. Después de confirmar acceso, se podrá publicar `agent/first-client-demo` y abrir un pull request de borrador sin modificar la implementación.
+Enviar la demo al cliente para aprobación visual y solicitar el menú, precios, dirección, horarios, teléfono, enlaces sociales, eventos, promociones, logo y textos definitivos.

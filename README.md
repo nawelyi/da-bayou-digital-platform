@@ -4,6 +4,14 @@ Primera versión demostrable del sitio de Da Bayou Sports Bar & Grill, preparada
 
 ## Ver la demo
 
+Demo pública para revisión del cliente:
+
+https://nawelyi.github.io/da-bayou-digital-platform/
+
+GitHub Pages publica automáticamente el contenido de `main` desde la raíz del repositorio.
+
+### Vista local
+
 Requiere Node.js 18 o posterior. No hay dependencias que instalar.
 
 ```bash
@@ -43,4 +51,3 @@ La fuente contractual se mantiene fuera del repositorio mediante `.gitignore`; s
 - `docs/TASKS.md`: tareas priorizadas para convertir la demo en producción.
 - `docs/IMAGE_ASSETS.md`: procedencia y prompts de los recursos visuales.
 - `docs/STATUS.md`: estado de implementación, pruebas y conexión con GitHub.
-
