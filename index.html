@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Da Bayou Sports Bar & Grill — Louisiana flavor, gameday energy, specials, events, and the Da Bayou Customer Club."
+    />
+    <meta name="theme-color" content="#251236" />
+    <title>Da Bayou Sports Bar & Grill</title>
+    <link rel="preload" href="assets/images/da-bayou-hero.jpg" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="review-banner" role="note">
+      <span>Client preview</span>
+      <p>Menu, prices, hours, address, and event details are sample content pending approval.</p>
+    </div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Da Bayou home">
+        <span class="brand-mark" aria-hidden="true">DB</span>
+        <span class="brand-copy">
+          <strong>DA BAYOU</strong>
+          <small>Sports Bar &amp; Grill</small>
+        </span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        data-nav-toggle
+      >
+        <span class="sr-only">Open navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation" data-nav>
+        <a href="#menu">Menu</a>
+        <a href="#specials">Specials</a>
+        <a href="#events">Events</a>
+        <a href="#visit">Visit</a>
+        <a class="nav-cta" href="#club">Join the club</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section id="top" class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <div class="hero-content page-shell">
+          <p class="eyebrow">Louisiana flavor • Every game • Good times</p>
+          <h1 id="hero-title">Meet us<br /><em>at Da Bayou.</em></h1>
+          <p class="hero-intro">
+            Big flavor, cold drinks, and a front-row seat to every play — all served with
+            neighborhood hospitality.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="#menu">Explore the menu</a>
+            <a class="text-link text-link-light" href="#club">Join the Customer Club <span>→</span></a>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#welcome" aria-label="Continue to the welcome section">
+          <span>Discover</span>
+          <i aria-hidden="true"></i>
+        </a>
+      </section>
+
+      <section id="welcome" class="welcome section-pad">
+        <div class="page-shell welcome-grid">
+          <div>
+            <p class="eyebrow eyebrow-dark">Your neighborhood gathering place</p>
+            <h2>Come hungry.<br />Stay for the game.</h2>
+          </div>
+          <div class="welcome-copy">
+            <p class="lead">
+              Da Bayou brings together Louisiana-inspired food, a lively sports-bar atmosphere,
+              and the kind of welcome that turns first visits into traditions.
+            </p>
+            <p>
+              Whether you're meeting the crew for Gameday, catching live entertainment, or
+              settling in for dinner, there is always a reason to come back.
+            </p>
+            <a class="text-link" href="#events">See what’s happening <span>→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience" aria-label="Da Bayou experience">
+        <article class="experience-card experience-food">
+          <span class="experience-number">01</span>
+          <div>
+            <p class="eyebrow">From the kitchen</p>
+            <h3>Bayou flavor</h3>
+            <p>Crowd-pleasing plates and Louisiana favorites made for sharing.</p>
+          </div>
+        </article>
+        <article class="experience-card experience-game">
+          <span class="experience-number">02</span>
+          <div>
+            <p class="eyebrow">Every big play</p>
+            <h3>Gameday energy</h3>
+            <p>Cold drinks, big screens, and a room that celebrates together.</p>
+          </div>
+        </article>
+        <article class="experience-card experience-night">
+          <span class="experience-number">03</span>
+          <div>
+            <p class="eyebrow">After the final whistle</p>
+            <h3>Good nights out</h3>
+            <p>Specials, entertainment, and reasons to stay for one more round.</p>
+          </div>
+        </article>
+      </section>
+
+      <section id="menu" class="menu-section section-pad" aria-labelledby="menu-title">
+        <div class="page-shell">
+          <div class="section-heading section-heading-split">
+            <div>
+              <p class="eyebrow eyebrow-dark">A first taste</p>
+              <h2 id="menu-title">Built for cravings.</h2>
+            </div>
+            <p>
+              This sample menu demonstrates the future menu experience. Item names, descriptions,
+              categories, availability, and prices require client confirmation.
+            </p>
+          </div>
+
+          <div class="feature-dish">
+            <figure class="feature-dish-image image-frame">
+              <img
+                src="assets/images/shrimp-poboy.jpg"
+                alt="Fried shrimp po’boy with seasoned fries and remoulade"
+                loading="lazy"
+              />
+            </figure>
+            <div class="feature-dish-copy">
+              <p class="eyebrow">Featured favorite</p>
+              <h3>Gulf Shrimp Po’Boy</h3>
+              <p>
+                Crispy Gulf shrimp, shredded lettuce, tomato, and house remoulade on toasted French bread.
+              </p>
+              <span class="price">Sample item • $16</span>
+            </div>
+          </div>
+
+          <div class="menu-browser">
+            <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+              <button id="tab-favorites" role="tab" aria-selected="true" aria-controls="panel-favorites" data-menu-tab="favorites">Bayou favorites</button>
+              <button id="tab-baskets" role="tab" aria-selected="false" aria-controls="panel-baskets" data-menu-tab="baskets">Baskets &amp; po’boys</button>
+              <button id="tab-shareables" role="tab" aria-selected="false" aria-controls="panel-shareables" data-menu-tab="shareables">Wings &amp; shareables</button>
+              <button id="tab-drinks" role="tab" aria-selected="false" aria-controls="panel-drinks" data-menu-tab="drinks">Cold drinks</button>
+            </div>
+
+            <div id="panel-favorites" class="menu-panel" role="tabpanel" aria-labelledby="tab-favorites" data-menu-panel="favorites">
+              <article class="menu-item"><div><h3>Seafood Gumbo</h3><p>Dark roux, Gulf seafood, rice, and scallions.</p></div><span>$12</span></article>
+              <article class="menu-item"><div><h3>Blackened Redfish</h3><p>Seasoned Gulf fish, dirty rice, and seasonal vegetables.</p></div><span>$24</span></article>
+              <article class="menu-item"><div><h3>Crawfish Étouffée</h3><p>Rich crawfish gravy over steamed rice.</p></div><span>$19</span></article>
+              <article class="menu-item"><div><h3>Bayou Burger</h3><p>Beef patty, pepper jack, grilled onions, and comeback sauce.</p></div><span>$15</span></article>
+            </div>
+            <div id="panel-baskets" class="menu-panel" role="tabpanel" aria-labelledby="tab-baskets" data-menu-panel="baskets" hidden>
+              <article class="menu-item"><div><h3>Fried Shrimp Basket</h3><p>Seasoned fries, slaw, hushpuppies, and remoulade.</p></div><span>$18</span></article>
+              <article class="menu-item"><div><h3>Catfish Po’Boy</h3><p>Crispy catfish, lettuce, tomato, pickles, and sauce.</p></div><span>$15</span></article>
+              <article class="menu-item"><div><h3>Oyster Basket</h3><p>Fried Gulf oysters with fries and house slaw.</p></div><span>$20</span></article>
+              <article class="menu-item"><div><h3>Half &amp; Half</h3><p>Choose two seafood favorites with classic sides.</p></div><span>$22</span></article>
+            </div>
+            <div id="panel-shareables" class="menu-panel" role="tabpanel" aria-labelledby="tab-shareables" data-menu-panel="shareables" hidden>
+              <article class="menu-item"><div><h3>Bayou Wings</h3><p>Ten wings tossed in your choice of house sauce.</p></div><span>$15</span></article>
+              <article class="menu-item"><div><h3>Boudin Balls</h3><p>Golden-fried and served with Creole mustard.</p></div><span>$11</span></article>
+              <article class="menu-item"><div><h3>Loaded Gameday Fries</h3><p>Cheese, bacon, jalapeño, scallions, and ranch.</p></div><span>$13</span></article>
+              <article class="menu-item"><div><h3>Fried Pickles</h3><p>Hand-breaded chips with cool ranch.</p></div><span>$9</span></article>
+            </div>
+            <div id="panel-drinks" class="menu-panel" role="tabpanel" aria-labelledby="tab-drinks" data-menu-panel="drinks" hidden>
+              <article class="menu-item"><div><h3>Bayou Breeze</h3><p>Blackberry, citrus, and a sparkling finish.</p></div><span>$10</span></article>
+              <article class="menu-item"><div><h3>House Margarita</h3><p>Tequila, fresh lime, orange, and a salted rim.</p></div><span>$9</span></article>
+              <article class="menu-item"><div><h3>Local Drafts</h3><p>A rotating selection from Louisiana breweries.</p></div><span>Market</span></article>
+              <article class="menu-item"><div><h3>Zero-Proof Cooler</h3><p>Seasonal fruit, citrus, soda, and fresh mint.</p></div><span>$6</span></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="specials" class="specials section-pad" aria-labelledby="specials-title">
+        <div class="page-shell">
+          <div class="section-heading centered-heading">
+            <p class="eyebrow">Something worth coming back for</p>
+            <h2 id="specials-title">Specials at Da Bayou</h2>
+            <p>Final offers and schedules will be added after client approval.</p>
+          </div>
+          <div class="special-grid">
+            <article class="special-card">
+              <span>Weekly feature</span>
+              <h3>Chef’s Bayou Plate</h3>
+              <p>A rotating Louisiana-inspired feature straight from the kitchen.</p>
+              <strong>Details coming soon</strong>
+            </article>
+            <article class="special-card special-card-gold">
+              <span>Happy Hour</span>
+              <h3>Cold drinks. Easy afternoons.</h3>
+              <p>Featured drafts, cocktails, and shareables at a price worth raising a glass to.</p>
+              <strong>Schedule coming soon</strong>
+            </article>
+            <article class="special-card">
+              <span>Gameday</span>
+              <h3>Bring the whole crew</h3>
+              <p>Food and drink offers built for the biggest LSU and Saints matchups.</p>
+              <strong>Offers coming soon</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="events" class="gameday" aria-labelledby="gameday-title">
+        <div class="gameday-image image-frame">
+          <img
+            src="assets/images/gameday-wings.jpg"
+            alt="Wings, beer, and a purple cocktail in a lively sports bar"
+            loading="lazy"
+          />
+        </div>
+        <div class="gameday-copy">
+          <p class="eyebrow">Gameday at Da Bayou</p>
+          <h2 id="gameday-title">Every seat feels like the 50-yard line.</h2>
+          <p>
+            Catch LSU, Saints, and the season’s biggest games with the sound on, the drinks cold,
+            and a table full of favorites.
+          </p>
+          <div class="event-list" aria-label="Sample events">
+            <article><span>Big games</span><strong>Featured watch parties</strong></article>
+            <article><span>Weekends</span><strong>Live entertainment</strong></article>
+            <article><span>All season</span><strong>Food &amp; drink promotions</strong></article>
+          </div>
+          <p class="pending-note">Exact events, dates, teams, and promotions are pending client approval.</p>
+        </div>
+      </section>
+
+      <section id="club" class="club section-pad" aria-labelledby="club-title">
+        <div class="page-shell club-grid">
+          <div class="club-copy">
+            <p class="eyebrow">The Da Bayou Customer Club</p>
+            <h2 id="club-title">Good news tastes better when it comes with perks.</h2>
+            <p>
+              Be first to hear about weekly specials, Gameday offers, live entertainment, new
+              menu items, and Customer Club-only surprises.
+            </p>
+            <ul class="check-list">
+              <li>Exclusive food and drink offers</li>
+              <li>Event and entertainment updates</li>
+              <li>Birthday and giveaway opportunities</li>
+            </ul>
+          </div>
+
+          <div class="club-card">
+            <div class="qr-preview" aria-label="Preview of the future Customer Club QR code">
+              <div class="qr-corner qr-corner-a"></div>
+              <div class="qr-corner qr-corner-b"></div>
+              <div class="qr-corner qr-corner-c"></div>
+              <div class="qr-noise" aria-hidden="true"></div>
+            </div>
+            <div class="club-form-wrap">
+              <p class="eyebrow eyebrow-dark">Join the list</p>
+              <h3>Save your seat at the table.</h3>
+              <form class="club-form" data-club-form>
+                <label>First name<input type="text" name="firstName" autocomplete="given-name" required /></label>
+                <label>Email address<input type="email" name="email" autocomplete="email" required /></label>
+                <label class="consent-field">
+                  <input type="checkbox" name="consent" required />
+                  <span>I agree to receive Da Bayou news and offers. I can unsubscribe at any time.</span>
+                </label>
+                <button class="button button-plum" type="submit">Join the Customer Club</button>
+                <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+              </form>
+              <p class="privacy-note">Demo only — no information is transmitted or stored in this preview.</p>
+            </div>
+          </div>
+          <p class="qr-note">The production QR code will be generated when the final public registration URL is approved.</p>
+        </div>
+      </section>
+
+      <section id="visit" class="visit section-pad" aria-labelledby="visit-title">
+        <div class="page-shell visit-grid">
+          <div class="visit-copy">
+            <p class="eyebrow eyebrow-dark">Come see us</p>
+            <h2 id="visit-title">Your place at Da Bayou is waiting.</h2>
+            <div class="visit-details">
+              <article><span>Location</span><strong>Southwest Louisiana</strong><p>Street address pending client confirmation</p></article>
+              <article><span>Hours</span><strong>Open days and hours</strong><p>Operating schedule pending client confirmation</p></article>
+              <article><span>Contact</span><strong>Phone and email</strong><p>Business contact details pending client confirmation</p></article>
+            </div>
+            <a class="button button-outline" href="#review-notes">View approval checklist</a>
+          </div>
+          <div class="map-preview" role="img" aria-label="Map placeholder awaiting the confirmed Da Bayou address">
+            <div class="map-road map-road-one"></div>
+            <div class="map-road map-road-two"></div>
+            <div class="map-road map-road-three"></div>
+            <div class="map-water"></div>
+            <div class="map-pin"><span>DB</span></div>
+            <p>Interactive directions activate after the address is approved.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="review-notes" class="approval section-pad" aria-labelledby="approval-title">
+        <div class="page-shell approval-grid">
+          <div>
+            <p class="eyebrow">For client review</p>
+            <h2 id="approval-title">Is this the right Da Bayou?</h2>
+          </div>
+          <ol>
+            <li><span>01</span><p><strong>Look &amp; feel</strong> — approve the warm, energetic, Louisiana sports-bar direction.</p></li>
+            <li><span>02</span><p><strong>Content</strong> — provide the final logo, menu, prices, address, hours, phone, social links, and event schedule.</p></li>
+            <li><span>03</span><p><strong>Customer Club</strong> — select the email platform and approve the opt-in language before real data collection begins.</p></li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-shell footer-grid">
+        <a class="brand footer-brand" href="#top" aria-label="Back to the top">
+          <span class="brand-mark" aria-hidden="true">DB</span>
+          <span class="brand-copy"><strong>DA BAYOU</strong><small>Sports Bar &amp; Grill</small></span>
+        </a>
+        <div><span class="footer-label">Explore</span><a href="#menu">Menu</a><a href="#specials">Specials</a><a href="#events">Events</a></div>
+        <div><span class="footer-label">Connect</span><a href="#club">Customer Club</a><span>Facebook • Instagram • TikTok</span></div>
+        <div><span class="footer-label">Visit</span><span>Address, hours, and contact details pending approval</span></div>
+      </div>
+      <div class="page-shell footer-bottom">
+        <p>© <span data-year></span> Da Bayou Sports Bar &amp; Grill. Client preview.</p>
+        <p>Original concept prepared for design approval.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
