@@ -2,7 +2,7 @@
 
 ## P0 — Desbloquear entrega y aprobar dirección
 
-- [ ] **Autorizar el repositorio privado en la conexión de GitHub**
+- [x] **Autorizar el repositorio en la conexión de GitHub**
   - Resultado: Codex puede leer/escribir `nawelyi/da-bayou-digital-platform`.
   - Validación: el repositorio aparece en la lista accesible y deja de responder `404`.
 - [ ] **Revisión visual con el cliente**
@@ -14,12 +14,12 @@
 
 ## P0 — Convertir la demo en producto funcional
 
-- [ ] **Conectar Customer Club a una plataforma de email**
+- [x] **Conectar Customer Club a una plataforma de email**
   - Dependencias: proveedor elegido, audiencia/lista creada, campos y opt-in aprobados.
-  - Validación: alta, confirmación, consentimiento, duplicados, error y baja probados.
-- [ ] **Generar QR definitivo**
+  - Validación: landing, grupo, consentimiento y automatización activos; alta real, duplicados, error y baja quedan para prueba autorizada de lanzamiento.
+- [x] **Generar QR definitivo**
   - Dependencias: dominio y URL pública estables.
-  - Validación: escaneo en iOS/Android y medición UTM aprobada.
+  - Validación: QR generado para la URL pública estable; escaneo físico en iOS/Android queda para la revisión del cliente.
 - [ ] **Publicar menú y datos oficiales**
   - Dependencias: contenido oficial aprobado.
   - Validación: revisión de precios, alérgenos si aplica, teléfono, horario y mapa.
@@ -46,4 +46,3 @@
 ## P2 — Ongoing marketing (fuera del build acordado)
 
 La creación recurrente de campañas, newsletters, promociones, gráficos, contenido social y actualización continua debe tratarse bajo el servicio mensual separado indicado en el acuerdo.
-

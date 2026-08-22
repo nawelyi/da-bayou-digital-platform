@@ -11,9 +11,10 @@ for (const id of requiredSections) {
   assert.match(html, new RegExp(`id=["']${id}["']`), `Missing #${id} section`);
 }
 
-assert.match(html, /data-club-form/, 'Customer Club form is missing');
+assert.match(html, /https:\/\/da-bayou-customer-club\.subscribepage\.io\//, 'Customer Club signup URL is missing');
+assert.match(html, /da-bayou-customer-club-qr\.svg/, 'Customer Club QR code is missing');
 assert.match(html, /aria-selected="true"/, 'Accessible menu tab state is missing');
-assert.match(html, /Demo only — no information is transmitted or stored/, 'Demo privacy notice is missing');
+assert.match(html, /You can unsubscribe from Da Bayou emails at any time/, 'Customer Club unsubscribe notice is missing');
 
 const localReferences = [...html.matchAll(/(?:src|href)="(?!https?:|#|mailto:|tel:)([^"?]+)"/g)].map((match) => match[1]);
 for (const reference of localReferences) {
@@ -21,4 +22,3 @@ for (const reference of localReferences) {
 }
 
 console.log(`Smoke checks passed: ${requiredSections.length} sections and ${localReferences.length} local references verified.`);
-

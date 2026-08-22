@@ -50,20 +50,6 @@ menuTabs.forEach((tab, index) => {
   });
 });
 
-const clubForm = document.querySelector('[data-club-form]');
-const formStatus = document.querySelector('[data-form-status]');
-
-clubForm?.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const data = new FormData(clubForm);
-  const firstName = String(data.get('firstName') || '').trim();
-  if (formStatus) {
-    formStatus.textContent = `Thanks${firstName ? `, ${firstName}` : ''}! This preview works — no information was sent or saved.`;
-  }
-  clubForm.reset();
-});
-
 document.querySelectorAll('[data-year]').forEach((year) => {
   year.textContent = String(new Date().getFullYear());
 });
-
