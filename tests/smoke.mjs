@@ -20,7 +20,7 @@ for (const asset of [
   'menu-sandwiches.webp',
   'menu-platters.webp',
 ]) {
-  assert.match(html, new RegExp(asset.replace('.', '\\\\.')), `Missing client asset reference: ${asset}`);
+  assert.ok(html.includes(asset), `Missing client asset reference: ${asset}`);
 }
 
 assert.match(html, /17316 Airline Hwy/, 'Official Da Bayou location is missing');
