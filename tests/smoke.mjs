@@ -13,7 +13,17 @@ for (const id of requiredSections) {
 
 assert.match(html, /https:\/\/da-bayou-customer-club\.subscribepage\.io\//, 'Customer Club signup URL is missing');
 assert.match(html, /da-bayou-customer-club-qr\.svg/, 'Customer Club QR code is missing');
-assert.match(html, /aria-selected="true"/, 'Accessible menu tab state is missing');
+
+for (const asset of [
+  'official-logo.webp',
+  'menu-appetizers.webp',
+  'menu-sandwiches.webp',
+  'menu-platters.webp',
+]) {
+  assert.match(html, new RegExp(asset.replace('.', '\\\\.')), `Missing client asset reference: ${asset}`);
+}
+
+assert.match(html, /17316 Airline Hwy/, 'Official Da Bayou location is missing');
 assert.match(html, /You can unsubscribe from Da Bayou emails at any time/, 'Customer Club unsubscribe notice is missing');
 
 const localReferences = [...html.matchAll(/(?:src|href)="(?!https?:|#|mailto:|tel:)([^"?]+)"/g)].map((match) => match[1]);

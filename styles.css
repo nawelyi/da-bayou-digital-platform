@@ -280,3 +280,137 @@ p { color: var(--muted); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }
+
+
+/* Official client assets — logo, menu boards, and confirmed location */
+.brand-logo-link {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.brand-logo {
+  display: block;
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.footer-logo {
+  width: 104px;
+  height: 104px;
+}
+
+.menu-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(18px, 2.5vw, 30px);
+  align-items: start;
+}
+
+.menu-board-card {
+  overflow: hidden;
+  border: 1px solid rgba(37, 18, 54, 0.14);
+  background: var(--plum-950);
+  box-shadow: var(--shadow);
+}
+
+.menu-board-copy {
+  min-height: 112px;
+  padding: 20px 22px;
+  color: var(--white);
+}
+
+.menu-board-copy span {
+  color: var(--gold-400);
+  font-size: 0.66rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.menu-board-copy h3 {
+  margin: 8px 0 0;
+  color: var(--white);
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  font-weight: 500;
+  line-height: 1.08;
+}
+
+.menu-board-link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: #09060b;
+}
+
+.menu-board-link img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 180ms ease;
+}
+
+.menu-board-link:hover img,
+.menu-board-link:focus-visible img {
+  transform: scale(1.012);
+}
+
+.menu-board-link:focus-visible,
+.map-link:focus-visible {
+  outline: 3px solid var(--gold-400);
+  outline-offset: 4px;
+}
+
+.menu-zoom {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  padding: 9px 11px;
+  background: rgba(17, 8, 22, 0.9);
+  color: var(--gold-400);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 8px 24px rgba(0,0,0,.24);
+}
+
+.map-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 980px) {
+  .brand-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .menu-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .brand-logo {
+    width: 54px;
+    height: 54px;
+  }
+
+  .footer-logo {
+    width: 92px;
+    height: 92px;
+  }
+
+  .menu-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-board-copy {
+    min-height: 0;
+  }
+}
