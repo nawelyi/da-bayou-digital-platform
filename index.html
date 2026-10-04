@@ -10,24 +10,26 @@
     <meta name="theme-color" content="#251236" />
     <title>Da Bayou Sports Bar & Grill</title>
     <link rel="preload" href="assets/images/da-bayou-hero.jpg" as="image" />
-    <link rel="stylesheet" href="styles.css?v=0.2" />
-    <script src="app.js?v=0.2" defer></script>
+    <link rel="stylesheet" href="styles.css?v=0.3" />
+    <script src="app.js?v=0.3" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
     <div class="review-banner" role="note">
       <span>Client preview</span>
-      <p>Menu, prices, hours, address, and event details are sample content pending approval.</p>
+      <p>Hours, phone, social links, and event/promotion details are pending client confirmation.</p>
     </div>
 
     <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="Da Bayou home">
-        <span class="brand-mark" aria-hidden="true">DB</span>
-        <span class="brand-copy">
-          <strong>DA BAYOU</strong>
-          <small>Sports Bar &amp; Grill</small>
-        </span>
+      <a class="brand" href="#top" aria-label="Da Bayou Sports Bar &amp; Grill home">
+        <img
+          class="brand-logo"
+          src="assets/images/official-logo.webp"
+          alt=""
+          width="720"
+          height="771"
+        />
       </a>
 
       <button
@@ -119,72 +121,108 @@
         </article>
       </section>
 
+
       <section id="menu" class="menu-section section-pad" aria-labelledby="menu-title">
         <div class="page-shell">
           <div class="section-heading section-heading-split">
             <div>
-              <p class="eyebrow eyebrow-dark">A first taste</p>
-              <h2 id="menu-title">Built for cravings.</h2>
+              <p class="eyebrow eyebrow-dark">Official menu</p>
+              <h2 id="menu-title">See what’s cooking.</h2>
             </div>
             <p>
-              This sample menu demonstrates the future menu experience. Item names, descriptions,
-              categories, availability, and prices require client confirmation.
+              Every menu page is shown in full below on desktop and mobile. Tap or click only
+              when you want a closer look.
             </p>
           </div>
 
-          <div class="feature-dish">
-            <figure class="feature-dish-image image-frame">
-              <img
-                src="assets/images/shrimp-poboy.jpg"
-                alt="Fried shrimp po’boy with seasoned fries and remoulade"
-                loading="lazy"
-              />
-            </figure>
-            <div class="feature-dish-copy">
-              <p class="eyebrow">Featured favorite</p>
-              <h3>Gulf Shrimp Po’Boy</h3>
-              <p>
-                Crispy Gulf shrimp, shredded lettuce, tomato, and house remoulade on toasted French bread.
-              </p>
-              <span class="price">Sample item • $16</span>
-            </div>
-          </div>
+          <div class="menu-gallery" aria-label="Da Bayou menu boards">
+            <article class="menu-card">
+              <div class="menu-card-copy">
+                <span>Menu 01</span>
+                <h3>Appetizers, Nachos, Soup &amp; Salad</h3>
+              </div>
+              <button
+                class="menu-card-trigger"
+                type="button"
+                data-menu-image="assets/images/menu-appetizers.webp"
+                data-menu-title="Appetizers, Nachos, Soup &amp; Salad"
+                data-menu-alt="Da Bayou menu board listing appetizers, nachos, soups, and salads with food photos"
+                aria-label="Open appetizers, nachos, soup, and salad menu in a larger view"
+              >
+                <img
+                  src="assets/images/menu-appetizers.webp"
+                  alt="Da Bayou menu board listing appetizers, nachos, soups, and salads with food photos"
+                  width="1024"
+                  height="1454"
+                  loading="lazy"
+                />
+                <span class="menu-card-zoom" aria-hidden="true">View larger <b>↗</b></span>
+              </button>
+            </article>
 
-          <div class="menu-browser">
-            <div class="menu-tabs" role="tablist" aria-label="Menu categories">
-              <button id="tab-favorites" role="tab" aria-selected="true" aria-controls="panel-favorites" data-menu-tab="favorites">Bayou favorites</button>
-              <button id="tab-baskets" role="tab" aria-selected="false" aria-controls="panel-baskets" data-menu-tab="baskets">Baskets &amp; po’boys</button>
-              <button id="tab-shareables" role="tab" aria-selected="false" aria-controls="panel-shareables" data-menu-tab="shareables">Wings &amp; shareables</button>
-              <button id="tab-drinks" role="tab" aria-selected="false" aria-controls="panel-drinks" data-menu-tab="drinks">Cold drinks</button>
-            </div>
+            <article class="menu-card">
+              <div class="menu-card-copy">
+                <span>Menu 02</span>
+                <h3>Sandwiches, Po’Boys &amp; Burgers</h3>
+              </div>
+              <button
+                class="menu-card-trigger"
+                type="button"
+                data-menu-image="assets/images/menu-sandwiches.webp"
+                data-menu-title="Sandwiches, Po’Boys &amp; Burgers"
+                data-menu-alt="Da Bayou menu board listing sandwiches, po’boys, and burgers with food photos"
+                aria-label="Open sandwiches, po’boys, and burgers menu in a larger view"
+              >
+                <img
+                  src="assets/images/menu-sandwiches.webp"
+                  alt="Da Bayou menu board listing sandwiches, po’boys, and burgers with food photos"
+                  width="1093"
+                  height="1548"
+                  loading="lazy"
+                />
+                <span class="menu-card-zoom" aria-hidden="true">View larger <b>↗</b></span>
+              </button>
+            </article>
 
-            <div id="panel-favorites" class="menu-panel" role="tabpanel" aria-labelledby="tab-favorites" data-menu-panel="favorites">
-              <article class="menu-item"><div><h3>Seafood Gumbo</h3><p>Dark roux, Gulf seafood, rice, and scallions.</p></div><span>$12</span></article>
-              <article class="menu-item"><div><h3>Blackened Redfish</h3><p>Seasoned Gulf fish, dirty rice, and seasonal vegetables.</p></div><span>$24</span></article>
-              <article class="menu-item"><div><h3>Crawfish Étouffée</h3><p>Rich crawfish gravy over steamed rice.</p></div><span>$19</span></article>
-              <article class="menu-item"><div><h3>Bayou Burger</h3><p>Beef patty, pepper jack, grilled onions, and comeback sauce.</p></div><span>$15</span></article>
-            </div>
-            <div id="panel-baskets" class="menu-panel" role="tabpanel" aria-labelledby="tab-baskets" data-menu-panel="baskets" hidden>
-              <article class="menu-item"><div><h3>Fried Shrimp Basket</h3><p>Seasoned fries, slaw, hushpuppies, and remoulade.</p></div><span>$18</span></article>
-              <article class="menu-item"><div><h3>Catfish Po’Boy</h3><p>Crispy catfish, lettuce, tomato, pickles, and sauce.</p></div><span>$15</span></article>
-              <article class="menu-item"><div><h3>Oyster Basket</h3><p>Fried Gulf oysters with fries and house slaw.</p></div><span>$20</span></article>
-              <article class="menu-item"><div><h3>Half &amp; Half</h3><p>Choose two seafood favorites with classic sides.</p></div><span>$22</span></article>
-            </div>
-            <div id="panel-shareables" class="menu-panel" role="tabpanel" aria-labelledby="tab-shareables" data-menu-panel="shareables" hidden>
-              <article class="menu-item"><div><h3>Bayou Wings</h3><p>Ten wings tossed in your choice of house sauce.</p></div><span>$15</span></article>
-              <article class="menu-item"><div><h3>Boudin Balls</h3><p>Golden-fried and served with Creole mustard.</p></div><span>$11</span></article>
-              <article class="menu-item"><div><h3>Loaded Gameday Fries</h3><p>Cheese, bacon, jalapeño, scallions, and ranch.</p></div><span>$13</span></article>
-              <article class="menu-item"><div><h3>Fried Pickles</h3><p>Hand-breaded chips with cool ranch.</p></div><span>$9</span></article>
-            </div>
-            <div id="panel-drinks" class="menu-panel" role="tabpanel" aria-labelledby="tab-drinks" data-menu-panel="drinks" hidden>
-              <article class="menu-item"><div><h3>Bayou Breeze</h3><p>Blackberry, citrus, and a sparkling finish.</p></div><span>$10</span></article>
-              <article class="menu-item"><div><h3>House Margarita</h3><p>Tequila, fresh lime, orange, and a salted rim.</p></div><span>$9</span></article>
-              <article class="menu-item"><div><h3>Local Drafts</h3><p>A rotating selection from Louisiana breweries.</p></div><span>Market</span></article>
-              <article class="menu-item"><div><h3>Zero-Proof Cooler</h3><p>Seasonal fruit, citrus, soda, and fresh mint.</p></div><span>$6</span></article>
-            </div>
+            <article class="menu-card">
+              <div class="menu-card-copy">
+                <span>Menu 03</span>
+                <h3>Platters, Pizza &amp; Sides</h3>
+              </div>
+              <button
+                class="menu-card-trigger"
+                type="button"
+                data-menu-image="assets/images/menu-platters.webp"
+                data-menu-title="Platters, Pizza &amp; Sides"
+                data-menu-alt="Da Bayou menu board listing seafood platters, pizza, and sides with food photos"
+                aria-label="Open platters, pizza, and sides menu in a larger view"
+              >
+                <img
+                  src="assets/images/menu-platters.webp"
+                  alt="Da Bayou menu board listing seafood platters, pizza, and sides with food photos"
+                  width="1156"
+                  height="1638"
+                  loading="lazy"
+                />
+                <span class="menu-card-zoom" aria-hidden="true">View larger <b>↗</b></span>
+              </button>
+            </article>
           </div>
         </div>
       </section>
+
+      <dialog class="menu-lightbox" data-menu-lightbox aria-labelledby="menu-lightbox-title">
+        <div class="menu-lightbox-header">
+          <h2 id="menu-lightbox-title" data-menu-lightbox-title>Da Bayou menu</h2>
+          <button class="menu-lightbox-close" type="button" data-menu-lightbox-close>
+            <span aria-hidden="true">×</span>
+            <span class="sr-only">Close enlarged menu</span>
+          </button>
+        </div>
+        <div class="menu-lightbox-scroll">
+          <img data-menu-lightbox-image src="" alt="" />
+        </div>
+      </dialog>
 
       <section id="specials" class="specials section-pad" aria-labelledby="specials-title">
         <div class="page-shell">
@@ -285,20 +323,31 @@
             <p class="eyebrow eyebrow-dark">Come see us</p>
             <h2 id="visit-title">Your place at Da Bayou is waiting.</h2>
             <div class="visit-details">
-              <article><span>Location</span><strong>Southwest Louisiana</strong><p>Street address pending client confirmation</p></article>
+              <article>
+                <span>Location</span>
+                <!-- Add "Ste G" after "Airline Hwy" once the suite is confirmed. -->
+                <strong>17316 Airline Hwy<br />Prairieville, LA 70769</strong>
+                <p>Prairieville, Louisiana</p>
+              </article>
               <article><span>Hours</span><strong>Open days and hours</strong><p>Operating schedule pending client confirmation</p></article>
               <article><span>Contact</span><strong>Phone and email</strong><p>Business contact details pending client confirmation</p></article>
             </div>
-            <a class="button button-outline" href="#review-notes">View approval checklist</a>
+            <a class="button button-outline" href="https://www.google.com/maps/search/?api=1&amp;query=17316+Airline+Hwy%2C+Prairieville%2C+LA+70769" target="_blank" rel="noopener">Get directions</a>
           </div>
-          <div class="map-preview" role="img" aria-label="Map placeholder awaiting the confirmed Da Bayou address">
+          <a
+            class="map-preview map-link"
+            href="https://www.google.com/maps/search/?api=1&amp;query=17316+Airline+Hwy%2C+Prairieville%2C+LA+70769"
+            target="_blank"
+            rel="noopener"
+            aria-label="Open directions to Da Bayou at 17316 Airline Highway, Prairieville, Louisiana"
+          >
             <div class="map-road map-road-one"></div>
             <div class="map-road map-road-two"></div>
             <div class="map-road map-road-three"></div>
             <div class="map-water"></div>
             <div class="map-pin"><span>DB</span></div>
-            <p>Interactive directions activate after the address is approved.</p>
-          </div>
+            <p>17316 Airline Hwy • Prairieville, LA 70769 — open directions</p>
+          </a>
         </div>
       </section>
 
@@ -310,7 +359,7 @@
           </div>
           <ol>
             <li><span>01</span><p><strong>Look &amp; feel</strong> — approve the warm, energetic, Louisiana sports-bar direction.</p></li>
-            <li><span>02</span><p><strong>Content</strong> — provide the final logo, menu, prices, address, hours, phone, social links, and event schedule.</p></li>
+            <li><span>02</span><p><strong>Content</strong> — official logo, menu boards, and address are integrated. Remaining: hours, phone, social links, and event/promotion schedule.</p></li>
             <li><span>03</span><p><strong>Customer Club</strong> — MailerLite registration, consent capture, welcome automation, and QR are active for review.</p></li>
           </ol>
         </div>
@@ -320,12 +369,18 @@
     <footer class="site-footer">
       <div class="page-shell footer-grid">
         <a class="brand footer-brand" href="#top" aria-label="Back to the top">
-          <span class="brand-mark" aria-hidden="true">DB</span>
-          <span class="brand-copy"><strong>DA BAYOU</strong><small>Sports Bar &amp; Grill</small></span>
+          <img
+            class="brand-logo"
+            src="assets/images/official-logo.webp"
+            alt=""
+            width="720"
+            height="771"
+            loading="lazy"
+          />
         </a>
         <div><span class="footer-label">Explore</span><a href="#menu">Menu</a><a href="#specials">Specials</a><a href="#events">Events</a></div>
         <div><span class="footer-label">Connect</span><a href="https://da-bayou-customer-club.subscribepage.io/">Customer Club</a><span>Facebook • Instagram • TikTok</span></div>
-        <div><span class="footer-label">Visit</span><span>Address, hours, and contact details pending approval</span></div>
+        <div><span class="footer-label">Visit</span><span>17316 Airline Hwy<br />Prairieville, LA 70769</span><span>Hours and contact details pending approval</span></div>
       </div>
       <div class="page-shell footer-bottom">
         <p>© <span data-year></span> Da Bayou Sports Bar &amp; Grill. Client preview.</p>

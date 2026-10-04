@@ -30,18 +30,18 @@ npm test
 
 - experiencia responsive, diseñada primero para móvil;
 - página principal con dirección visual original;
-- menú demostrativo con categorías interactivas;
+- menú oficial en una galería responsive con ampliación accesible;
 - bloques para promociones, Gameday y eventos;
 - Customer Club conectado a una landing pública de MailerLite;
 - captura de nombre, email y consentimiento explícito;
 - correo automático de bienvenida y QR definitivo;
-- ubicación, horarios y contacto preparados para los datos definitivos;
+- dirección confirmada y bloques preparados para completar horarios y contacto;
 - checklist visible para aprobación del cliente;
 - imágenes originales generadas con IA y optimizadas para web.
 
 ## Límites intencionales de la demo
 
-La landing del Customer Club transmite los registros consentidos a MailerLite y activa el correo de bienvenida. Menú, precios, horarios, teléfono, enlaces sociales, eventos y promociones siguen siendo contenido de demostración o están marcados como pendientes. No deben publicarse como información definitiva sin aprobación del cliente.
+La landing del Customer Club transmite los registros consentidos a MailerLite y activa el correo de bienvenida. El logo, las imágenes del menú y la dirección ya corresponden a los assets/datos enviados por el cliente. Horarios, teléfono, enlaces sociales, eventos y promociones siguen siendo contenido de demostración o están marcados como pendientes. No deben publicarse como información definitiva sin aprobación del cliente.
 
 La fuente contractual se mantiene fuera del repositorio mediante `.gitignore`; se utiliza únicamente como referencia de alcance.
 
