@@ -23,31 +23,32 @@ window.addEventListener('resize', () => {
   if (window.innerWidth > 980) closeNavigation();
 });
 
-const menuTabs = [...document.querySelectorAll('[data-menu-tab]')];
-const menuPanels = [...document.querySelectorAll('[data-menu-panel]')];
+const menuLightbox = document.querySelector('[data-menu-lightbox]');
+const menuLightboxImage = menuLightbox?.querySelector('[data-menu-lightbox-image]');
+const menuLightboxTitle = menuLightbox?.querySelector('[data-menu-lightbox-title]');
+const menuLightboxClose = menuLightbox?.querySelector('[data-menu-lightbox-close]');
+let lastMenuTrigger;
 
-function selectMenuTab(selectedTab) {
-  const target = selectedTab.dataset.menuTab;
-  menuTabs.forEach((tab) => {
-    const isSelected = tab === selectedTab;
-    tab.setAttribute('aria-selected', String(isSelected));
-    tab.tabIndex = isSelected ? 0 : -1;
-  });
-  menuPanels.forEach((panel) => {
-    panel.hidden = panel.dataset.menuPanel !== target;
-  });
-}
+document.querySelectorAll('[data-menu-image]').forEach((trigger) => {
+  trigger.addEventListener('click', () => {
+    if (!menuLightbox || !menuLightboxImage || !menuLightboxTitle) return;
 
-menuTabs.forEach((tab, index) => {
-  tab.addEventListener('click', () => selectMenuTab(tab));
-  tab.addEventListener('keydown', (event) => {
-    if (!['ArrowRight', 'ArrowLeft', 'ArrowDown', 'ArrowUp'].includes(event.key)) return;
-    event.preventDefault();
-    const moveForward = event.key === 'ArrowRight' || event.key === 'ArrowDown';
-    const nextIndex = (index + (moveForward ? 1 : -1) + menuTabs.length) % menuTabs.length;
-    menuTabs[nextIndex].focus();
-    selectMenuTab(menuTabs[nextIndex]);
+    lastMenuTrigger = trigger;
+    menuLightboxImage.src = trigger.dataset.menuImage;
+    menuLightboxImage.alt = trigger.dataset.menuAlt;
+    menuLightboxTitle.textContent = trigger.dataset.menuTitle;
+    menuLightbox.showModal();
+    document.body.classList.add('lightbox-open');
   });
+});
+
+menuLightboxClose?.addEventListener('click', () => menuLightbox.close());
+menuLightbox?.addEventListener('click', (event) => {
+  if (event.target === menuLightbox) menuLightbox.close();
+});
+menuLightbox?.addEventListener('close', () => {
+  document.body.classList.remove('lightbox-open');
+  lastMenuTrigger?.focus();
 });
 
 document.querySelectorAll('[data-year]').forEach((year) => {

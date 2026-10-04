@@ -1,6 +1,6 @@
 # Estado del proyecto
 
-Actualizado: 22 de agosto de 2026.
+Actualizado: 3 de octubre de 2026.
 
 ## Implementación
 
@@ -23,11 +23,14 @@ Actualizado: 22 de agosto de 2026.
 - escritorio: portada, composición, imágenes y menú interactivo revisados;
 - móvil: 390 × 844, sin desbordamiento horizontal;
 - navegación móvil: apertura, cierre, bloqueo de scroll y enlaces verificados;
-- menú: tabs por click y estado visible/oculto verificados;
+- menú: galería responsive, diálogo ampliado, cierre con `Esc` y retorno de foco verificados;
 - Customer Club: landing pública conectada al grupo `Da Bayou Customer Club`;
 - Customer Club: nombre, email y consentimiento explícito presentes en la landing;
 - automatización de bienvenida activa desde `dabayoucustomerclub@gmail.com`;
 - QR definitivo enlazado a https://da-bayou-customer-club.subscribepage.io/;
+- logo oficial integrado en header y footer;
+- tres menu boards oficiales integrados en una galería responsive con diálogo accesible;
+- dirección actualizada a `17316 Airline Hwy, Prairieville, LA 70769`;
 - consola del navegador: sin errores ni warnings.
 - versión alojada en GitHub Pages abierta y revisada con imágenes y estilos cargados.
 
@@ -42,4 +45,4 @@ Actualizado: 22 de agosto de 2026.
 
 ## Siguiente etapa
 
-Enviar la demo y el Customer Club al cliente para aprobación visual. Solicitar el menú, precios, horarios, teléfono, enlaces sociales, eventos, promociones, logo y textos definitivos. Completar una prueba de alta real con una dirección autorizada antes del lanzamiento final.
+Revisar la rama `feat/official-logo-menu-location` con el cliente. Confirmar si debe añadirse `Ste G` a la dirección y solicitar horarios, teléfono, enlaces sociales, eventos, promociones y textos definitivos. Completar una prueba de alta real con una dirección autorizada antes del lanzamiento final.

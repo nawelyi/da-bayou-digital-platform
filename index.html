@@ -10,8 +10,8 @@
     <meta name="theme-color" content="#251236" />
     <title>Da Bayou Sports Bar & Grill</title>
     <link rel="preload" href="assets/images/da-bayou-hero.jpg" as="image" />
-    <link rel="stylesheet" href="styles.css?v=0.2" />
-    <script src="app.js?v=0.2" defer></script>
+    <link rel="stylesheet" href="styles.css?v=0.3" />
+    <script src="app.js?v=0.3" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -22,8 +22,14 @@
     </div>
 
     <header class="site-header" data-header>
-      <a class="brand brand-logo-link" href="#top" aria-label="Da Bayou Sports Bar & Grill home">
-        <img class="brand-logo" src="assets/images/official-logo.webp" alt="Da Bayou Sports Bar &amp; Grill" />
+      <a class="brand" href="#top" aria-label="Da Bayou Sports Bar &amp; Grill home">
+        <img
+          class="brand-logo"
+          src="assets/images/official-logo.webp"
+          alt=""
+          width="720"
+          height="771"
+        />
       </a>
 
       <button
@@ -120,80 +126,103 @@
         <div class="page-shell">
           <div class="section-heading section-heading-split">
             <div>
-              <p class="eyebrow eyebrow-dark">Straight from Da Bayou</p>
-              <h2 id="menu-title">Explore our menu.</h2>
+              <p class="eyebrow eyebrow-dark">Official menu</p>
+              <h2 id="menu-title">See what’s cooking.</h2>
             </div>
             <p>
-              Browse Da Bayou’s menu boards below. Tap or click any page to open a larger view.
+              Browse the Da Bayou menu below. Select any menu board to open a larger,
+              easier-to-read view.
             </p>
           </div>
 
-          <div class="menu-gallery">
-            <article class="menu-board-card">
-              <div class="menu-board-copy">
-                <span>Menu 01</span>
-                <h3>Appetizers, Nachos, Soup &amp; Salad</h3>
-              </div>
-              <a
-                class="menu-board-link"
-                href="assets/images/menu-appetizers.webp"
-                target="_blank"
-                rel="noopener"
-                aria-label="Open appetizers, nachos, soup and salad menu in a larger view"
+          <div class="menu-gallery" aria-label="Da Bayou menu boards">
+            <article class="menu-card">
+              <button
+                class="menu-card-trigger"
+                type="button"
+                data-menu-image="assets/images/menu-appetizers.webp"
+                data-menu-title="Appetizers, Nachos, Soup &amp; Salad"
+                data-menu-alt="Da Bayou menu board listing appetizers, nachos, soups, and salads with food photos"
+                aria-label="Open appetizers, nachos, soup, and salad menu in a larger view"
               >
                 <img
                   src="assets/images/menu-appetizers.webp"
-                  alt="Da Bayou menu page with appetizers, nachos, soup and salad"
+                  alt="Da Bayou menu board listing appetizers, nachos, soups, and salads with food photos"
+                  width="1024"
+                  height="1454"
                   loading="lazy"
                 />
-                <span class="menu-zoom">View full menu ↗</span>
-              </a>
+                <span class="menu-card-zoom" aria-hidden="true">View larger <b>↗</b></span>
+              </button>
+              <div class="menu-card-copy">
+                <span>Menu 01</span>
+                <h3>Appetizers, Nachos, Soup &amp; Salad</h3>
+              </div>
             </article>
 
-            <article class="menu-board-card">
-              <div class="menu-board-copy">
-                <span>Menu 02</span>
-                <h3>Sandwiches, Po’Boys &amp; Burgers</h3>
-              </div>
-              <a
-                class="menu-board-link"
-                href="assets/images/menu-sandwiches.webp"
-                target="_blank"
-                rel="noopener"
-                aria-label="Open sandwiches, po-boys and burgers menu in a larger view"
+            <article class="menu-card">
+              <button
+                class="menu-card-trigger"
+                type="button"
+                data-menu-image="assets/images/menu-sandwiches.webp"
+                data-menu-title="Sandwiches, Po’Boys &amp; Burgers"
+                data-menu-alt="Da Bayou menu board listing sandwiches, po’boys, and burgers with food photos"
+                aria-label="Open sandwiches, po’boys, and burgers menu in a larger view"
               >
                 <img
                   src="assets/images/menu-sandwiches.webp"
-                  alt="Da Bayou menu page with sandwiches, po-boys and build-your-own burgers"
+                  alt="Da Bayou menu board listing sandwiches, po’boys, and burgers with food photos"
+                  width="1093"
+                  height="1548"
                   loading="lazy"
                 />
-                <span class="menu-zoom">View full menu ↗</span>
-              </a>
+                <span class="menu-card-zoom" aria-hidden="true">View larger <b>↗</b></span>
+              </button>
+              <div class="menu-card-copy">
+                <span>Menu 02</span>
+                <h3>Sandwiches, Po’Boys &amp; Burgers</h3>
+              </div>
             </article>
 
-            <article class="menu-board-card">
-              <div class="menu-board-copy">
-                <span>Menu 03</span>
-                <h3>Platters, Pizza &amp; Sides</h3>
-              </div>
-              <a
-                class="menu-board-link"
-                href="assets/images/menu-platters.webp"
-                target="_blank"
-                rel="noopener"
-                aria-label="Open platters, pizza and sides menu in a larger view"
+            <article class="menu-card">
+              <button
+                class="menu-card-trigger"
+                type="button"
+                data-menu-image="assets/images/menu-platters.webp"
+                data-menu-title="Platters, Pizza &amp; Sides"
+                data-menu-alt="Da Bayou menu board listing seafood platters, pizza, and sides with food photos"
+                aria-label="Open platters, pizza, and sides menu in a larger view"
               >
                 <img
                   src="assets/images/menu-platters.webp"
-                  alt="Da Bayou menu page with seafood platters, pizza and sides"
+                  alt="Da Bayou menu board listing seafood platters, pizza, and sides with food photos"
+                  width="1156"
+                  height="1638"
                   loading="lazy"
                 />
-                <span class="menu-zoom">View full menu ↗</span>
-              </a>
+                <span class="menu-card-zoom" aria-hidden="true">View larger <b>↗</b></span>
+              </button>
+              <div class="menu-card-copy">
+                <span>Menu 03</span>
+                <h3>Platters, Pizza &amp; Sides</h3>
+              </div>
             </article>
           </div>
         </div>
       </section>
+
+      <dialog class="menu-lightbox" data-menu-lightbox aria-labelledby="menu-lightbox-title">
+        <div class="menu-lightbox-header">
+          <h2 id="menu-lightbox-title" data-menu-lightbox-title>Da Bayou menu</h2>
+          <button class="menu-lightbox-close" type="button" data-menu-lightbox-close>
+            <span aria-hidden="true">×</span>
+            <span class="sr-only">Close enlarged menu</span>
+          </button>
+        </div>
+        <div class="menu-lightbox-scroll">
+          <img data-menu-lightbox-image src="" alt="" />
+        </div>
+      </dialog>
 
       <section id="specials" class="specials section-pad" aria-labelledby="specials-title">
         <div class="page-shell">
@@ -294,7 +323,12 @@
             <p class="eyebrow eyebrow-dark">Come see us</p>
             <h2 id="visit-title">Your place at Da Bayou is waiting.</h2>
             <div class="visit-details">
-              <article><span>Location</span><strong>Prairieville, Louisiana</strong><p>17316 Airline Hwy<br />Prairieville, LA 70769</p></article>
+              <article>
+                <span>Location</span>
+                <!-- Add "Ste G" after "Airline Hwy" once the suite is confirmed. -->
+                <strong>17316 Airline Hwy<br />Prairieville, LA 70769</strong>
+                <p>Prairieville, Louisiana</p>
+              </article>
               <article><span>Hours</span><strong>Open days and hours</strong><p>Operating schedule pending client confirmation</p></article>
               <article><span>Contact</span><strong>Phone and email</strong><p>Business contact details pending client confirmation</p></article>
             </div>
@@ -334,12 +368,19 @@
 
     <footer class="site-footer">
       <div class="page-shell footer-grid">
-        <a class="brand footer-brand brand-logo-link" href="#top" aria-label="Back to the top">
-          <img class="brand-logo footer-logo" src="assets/images/official-logo.webp" alt="" loading="lazy" />
+        <a class="brand footer-brand" href="#top" aria-label="Back to the top">
+          <img
+            class="brand-logo"
+            src="assets/images/official-logo.webp"
+            alt=""
+            width="720"
+            height="771"
+            loading="lazy"
+          />
         </a>
         <div><span class="footer-label">Explore</span><a href="#menu">Menu</a><a href="#specials">Specials</a><a href="#events">Events</a></div>
         <div><span class="footer-label">Connect</span><a href="https://da-bayou-customer-club.subscribepage.io/">Customer Club</a><span>Facebook • Instagram • TikTok</span></div>
-        <div><span class="footer-label">Visit</span><span>17316 Airline Hwy<br />Prairieville, LA 70769<br />Hours &amp; phone pending</span></div>
+        <div><span class="footer-label">Visit</span><span>17316 Airline Hwy<br />Prairieville, LA 70769</span><span>Hours and contact details pending approval</span></div>
       </div>
       <div class="page-shell footer-bottom">
         <p>© <span data-year></span> Da Bayou Sports Bar &amp; Grill. Client preview.</p>
