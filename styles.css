@@ -111,15 +111,12 @@ p { color: var(--muted); }
 .menu-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(28px, 5vw, 58px); align-items: start; }
 .menu-card { overflow: hidden; background: var(--white); box-shadow: var(--shadow); }
 .menu-card:last-child { grid-column: 1 / -1; width: calc(50% - clamp(14px, 2.5vw, 29px)); justify-self: center; }
-.menu-card-trigger { position: relative; width: 100%; display: block; padding: 0; overflow: hidden; border: 0; background: #0d090b; cursor: zoom-in; }
-.menu-card-trigger img { aspect-ratio: 0.706; object-fit: cover; transition: transform 260ms ease, opacity 260ms ease; }
-.menu-card-trigger::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 68%, rgba(10,4,12,0.72)); opacity: 0.78; transition: opacity 180ms ease; }
-.menu-card-trigger:hover img, .menu-card-trigger:focus-visible img { transform: scale(1.018); opacity: 0.92; }
-.menu-card-trigger:hover::after, .menu-card-trigger:focus-visible::after { opacity: 1; }
+.menu-card-trigger { position: relative; width: 100%; display: block; padding: 0; overflow: hidden; border: 0; background: var(--white); cursor: zoom-in; }
+.menu-card-trigger img { width: 100%; height: auto; aspect-ratio: auto; object-fit: contain; }
 .menu-card-trigger:focus-visible { outline: 4px solid var(--gold-500); outline-offset: 4px; }
-.menu-card-zoom { position: absolute; z-index: 1; left: 24px; right: 24px; bottom: 20px; display: flex; justify-content: space-between; align-items: center; color: var(--white); font-size: 0.7rem; font-weight: 900; letter-spacing: 0.13em; text-transform: uppercase; }
+.menu-card-zoom { position: static; display: flex; justify-content: space-between; align-items: center; padding: 13px 18px; background: var(--plum-950); color: var(--white); font-size: 0.7rem; font-weight: 900; letter-spacing: 0.13em; text-transform: uppercase; }
 .menu-card-zoom b { color: var(--gold-400); font-size: 1.2rem; }
-.menu-card-copy { padding: 25px 28px 29px; }
+.menu-card-copy { min-height: 132px; display: flex; flex-direction: column; justify-content: center; padding: 25px 28px 29px; }
 .menu-card-copy span { color: var(--plum-700); font-size: 0.67rem; font-weight: 900; letter-spacing: 0.14em; text-transform: uppercase; }
 .menu-card-copy h3 { margin: 8px 0 0; color: var(--plum-900); font-family: var(--serif); font-size: clamp(1.55rem, 2.6vw, 2.25rem); font-weight: 500; }
 
@@ -230,6 +227,9 @@ p { color: var(--muted); }
   .experience { grid-template-columns: 1fr; }
   .experience-card { min-height: 340px; }
   .experience-card div { max-width: 560px; }
+  .menu-gallery { max-width: 720px; grid-template-columns: 1fr; margin-inline: auto; }
+  .menu-card:last-child { grid-column: auto; width: 100%; }
+  .menu-card-copy { min-height: 0; }
   .special-grid { grid-template-columns: 1fr; }
   .special-card { min-height: 290px; }
   .gameday { grid-template-columns: 1fr; }
@@ -258,10 +258,9 @@ p { color: var(--muted); }
   .scroll-cue { display: none; }
   .welcome-grid, .section-heading-split { grid-template-columns: 1fr; gap: 24px; }
   .welcome-copy { padding-top: 0; }
-  .menu-gallery { grid-template-columns: 1fr; gap: 28px; }
-  .menu-card:last-child { grid-column: auto; width: 100%; }
+  .menu-gallery { gap: 28px; }
   .menu-card-copy { padding: 21px 22px 24px; }
-  .menu-card-zoom { left: 18px; right: 18px; bottom: 16px; }
+  .menu-card-zoom { padding: 12px 16px; }
   .menu-lightbox { width: 100vw; height: 100svh; }
   .menu-lightbox-scroll { padding: 12px; }
   .gameday-image { min-height: 520px; }

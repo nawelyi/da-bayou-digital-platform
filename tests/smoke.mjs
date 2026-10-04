@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const html = readFileSync(join(root, 'index.html'), 'utf8');
+const css = readFileSync(join(root, 'styles.css'), 'utf8');
 
 const requiredSections = ['menu', 'specials', 'events', 'club', 'visit', 'review-notes'];
 for (const id of requiredSections) {
@@ -29,6 +30,7 @@ for (const menuImage of menuImages) {
 }
 
 assert.doesNotMatch(html, /This sample menu/, 'Sample menu copy should not remain');
+assert.match(css, /\.menu-card-trigger img \{[^}]*height: auto;[^}]*object-fit: contain;/, 'Menu boards must display without cropping');
 
 const localReferences = [...html.matchAll(/(?:src|href)="(?!https?:|#|mailto:|tel:)([^"?]+)"/g)].map((match) => match[1]);
 for (const reference of localReferences) {
