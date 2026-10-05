@@ -1,6 +1,6 @@
 # Da Bayou Digital Platform
 
-Primera versión demostrable del sitio de Da Bayou Sports Bar & Grill, preparada para aprobación visual y validación de alcance con el cliente.
+Sitio estático de Da Bayou Sports Bar & Grill, preparado para publicación en GitHub Pages sin frameworks ni dependencias de producción.
 
 ## Ver la demo
 
@@ -36,12 +36,14 @@ npm test
 - captura de nombre, email y consentimiento explícito;
 - correo automático de bienvenida y QR definitivo;
 - dirección confirmada y bloques preparados para completar horarios y contacto;
+- enlaces oficiales de Facebook, Instagram y TikTok;
+- metadata local, datos estructurados de restaurante, `robots.txt` y `sitemap.xml`;
 - checklist visible para aprobación del cliente;
 - imágenes originales generadas con IA y optimizadas para web.
 
 ## Límites intencionales de la demo
 
-La landing del Customer Club transmite los registros consentidos a MailerLite y activa el correo de bienvenida. El logo, las imágenes del menú y la dirección ya corresponden a los assets/datos enviados por el cliente. Horarios, teléfono, enlaces sociales, eventos y promociones siguen siendo contenido de demostración o están marcados como pendientes. No deben publicarse como información definitiva sin aprobación del cliente.
+La landing del Customer Club transmite los registros consentidos a MailerLite y activa el correo de bienvenida. El logo, las imágenes del menú, la dirección y los enlaces sociales ya corresponden a los assets/datos enviados por el cliente. Horarios, teléfono, eventos y promociones siguen siendo contenido de demostración o están marcados como pendientes. No deben publicarse como información definitiva sin aprobación del cliente.
 
 La fuente contractual se mantiene fuera del repositorio mediante `.gitignore`; se utiliza únicamente como referencia de alcance.
 
@@ -52,3 +54,4 @@ La fuente contractual se mantiene fuera del repositorio mediante `.gitignore`; s
 - `docs/TASKS.md`: tareas priorizadas para convertir la demo en producción.
 - `docs/IMAGE_ASSETS.md`: procedencia y prompts de los recursos visuales.
 - `docs/STATUS.md`: estado de implementación, pruebas y conexión con GitHub.
+- `docs/SEARCH_CONSOLE.md`: pasos manuales pendientes para verificación e indexación.
