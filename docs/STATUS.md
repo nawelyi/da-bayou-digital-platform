@@ -1,25 +1,19 @@
 # Estado del proyecto
 
-Actualizado: 3 de octubre de 2026.
+Actualizado: 4 de octubre de 2026.
 
 ## Implementación
 
-- **Versión:** 0.1, primera demo para aprobación del cliente.
+- **Versión:** sitio aprobado con preparación técnica de SEO local en `feat/local-seo-social`.
 - **Rama publicada:** `main`.
+- **Rama en preparación:** `feat/local-seo-social` (pendiente de aprobación, commit y despliegue).
 - **Repositorio:** público para permitir la demostración mediante GitHub Pages.
 - **Demo pública:** https://nawelyi.github.io/da-bayou-digital-platform/
 - **Servidor local:** `http://127.0.0.1:4173` con `npm run dev`.
 
-## Commits
-
-- `f1a38a6` — `document client-review MVP scope`
-- `0010e78` — `build first client-review website demo`
-- `efe144e` — `record demo validation status`
-- `d31b6de` — `document public client preview`
-
 ## Validación completada
 
-- smoke checks: seis secciones contractuales y cinco recursos locales verificados;
+- smoke checks: secciones, menú, Customer Club, QR, recursos locales y preparación SEO verificados;
 - escritorio: portada, composición, imágenes y menú interactivo revisados;
 - móvil: 390 × 844, sin desbordamiento horizontal;
 - navegación móvil: apertura, cierre, bloqueo de scroll y enlaces verificados;
@@ -31,8 +25,13 @@ Actualizado: 3 de octubre de 2026.
 - logo oficial integrado en header y footer;
 - tres menu boards oficiales integrados en una galería responsive con diálogo accesible;
 - dirección actualizada a `17316 Airline Hwy, Prairieville, LA 70769`;
-- consola del navegador: sin errores ni warnings.
-- versión alojada en GitHub Pages abierta y revisada con imágenes y estilos cargados.
+- enlaces oficiales de Facebook, Instagram y TikTok integrados;
+- título, descripción, canonical, Open Graph y Twitter Card preparados;
+- favicon configurado con el logo oficial existente;
+- datos estructurados `Restaurant` preparados con información confirmada;
+- `robots.txt` y `sitemap.xml` preparados para el sitio público;
+- consola del navegador: sin errores ni warnings;
+- versión alojada en GitHub Pages responde correctamente por HTTPS.
 
 ## GitHub
 
@@ -43,6 +42,13 @@ Actualizado: 3 de octubre de 2026.
 - GitHub Pages publica `main` desde `/(root)` y exige HTTPS.
 - Cada cambio aprobado seguirá el flujo: editar, validar, crear un commit claro, actualizar `main` y comprobar la publicación.
 
-## Siguiente etapa
+## Pendientes confirmados
 
-Revisar la rama `feat/official-logo-menu-location` con el cliente. Confirmar si debe añadirse `Ste G` a la dirección y solicitar horarios, teléfono, enlaces sociales, eventos, promociones y textos definitivos. Completar una prueba de alta real con una dirección autorizada antes del lanzamiento final.
+- Google Search Console: verificar la propiedad, enviar el sitemap y solicitar indexación después del despliegue.
+- Google Business Profile: verificación y optimización todavía pendientes.
+- Cliente: confirmar teléfono y horarios antes de publicarlos.
+- Cliente: confirmar si debe añadirse `Ste G`; no está publicado actualmente.
+- Cliente: confirmar calendario de eventos y promociones.
+- Lanzamiento: completar una prueba de alta real con una dirección autorizada.
+
+Los pasos exactos de Search Console están documentados en `docs/SEARCH_CONSOLE.md`.

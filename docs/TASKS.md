@@ -8,8 +8,8 @@
 - [ ] **Revisión visual con el cliente**
   - Resultado: aprobado, aprobado con cambios o rechazado cada bloque: look & feel, home, menú, especiales, Gameday, Club y ubicación.
   - Validación: decisiones documentadas por sección.
-- [ ] **Recibir paquete de contenido oficial**
-  - Resultado: logo, menú, precios, dirección, horarios, contacto, redes, eventos y promociones.
+- [ ] **Completar paquete de contenido oficial**
+  - Resultado actual: logo, menú, dirección y redes oficiales recibidos; horarios, teléfono, eventos y promociones siguen pendientes.
   - Validación: cada dato tiene dueño y fecha de aprobación.
 
 ## P0 — Convertir la demo en producto funcional
@@ -20,19 +20,20 @@
 - [x] **Generar QR definitivo**
   - Dependencias: dominio y URL pública estables.
   - Validación: QR generado para la URL pública estable; escaneo físico en iOS/Android queda para la revisión del cliente.
-- [ ] **Publicar menú y datos oficiales**
+- [ ] **Completar datos públicos del negocio**
   - Dependencias: contenido oficial aprobado.
-  - Validación: revisión de precios, alérgenos si aplica, teléfono, horario y mapa.
+  - Validación: menú, dirección y mapa están integrados; faltan teléfono, horario y cualquier revisión de alérgenos si aplica.
 - [ ] **Elegir actualización de promociones/eventos**
   - Opciones: cambios en repositorio, CMS ligero o integración con un sistema existente.
   - Validación: una persona no técnica puede completar el flujo acordado.
 
 ## P1 — Presencia y medición
 
-- [ ] Conectar mapa/direcciones y enlaces sociales.
-- [ ] Implementar metadata social, favicon, sitemap, robots y datos estructurados del restaurante.
+- [x] Conectar mapa/direcciones y enlaces oficiales de Facebook, Instagram y TikTok.
+- [x] Preparar metadata social, favicon, sitemap, robots y datos estructurados del restaurante.
+- [ ] Verificar la propiedad en Google Search Console, enviar el sitemap y solicitar indexación después del despliegue.
 - [ ] Configurar analítica y eventos con consentimiento apropiado.
-- [ ] Completar configuración/optimización de Google Business.
+- [ ] Completar verificación y optimización de Google Business Profile.
 - [ ] Preparar gráficos de perfil y portada para Facebook, Instagram y TikTok.
 
 ## P1 — Calidad de lanzamiento
