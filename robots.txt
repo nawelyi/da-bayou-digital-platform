@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nawelyi.github.io/da-bayou-digital-platform/sitemap.xml
+Sitemap: https://dabayousportsbarandgrill.com/sitemap.xml
