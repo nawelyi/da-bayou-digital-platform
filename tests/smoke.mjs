@@ -42,7 +42,7 @@ assert.match(html, /<meta\s+name=["']robots["']\s+content=["']index, follow, max
 assert.doesNotMatch(html, /\b(?:noindex|nofollow)\b/i, 'The homepage must not block search engines');
 
 assert.match(html, /<link\s+rel=["']icon["'][^>]+href=["']assets\/images\/official-logo\.webp["']/, 'Official logo favicon is missing');
-assert.match(html, /property=["']og:image["'][^>]+https:\/\/nawelyi\.github\.io\/da-bayou-digital-platform\/assets\/images\/da-bayou-hero\.jpg/, 'Absolute Open Graph image is missing');
+assert.match(html, /property=["']og:image["'][^>]+https:\/\/dabayousportsbarandgrill\.com\/assets\/images\/da-bayou-hero\.jpg/, 'Absolute Open Graph image is missing');
 assert.match(html, /name=["']twitter:card["']\s+content=["']summary_large_image["']/, 'Twitter card metadata is missing');
 
 const jsonLdBlocks = [...html.matchAll(/<script\s+type=["']application\/ld\+json["']>([\s\S]*?)<\/script>/gi)];
