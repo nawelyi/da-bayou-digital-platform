@@ -9,7 +9,7 @@ const css = readFileSync(join(root, 'styles.css'), 'utf8');
 const robots = readFileSync(join(root, 'robots.txt'), 'utf8');
 const sitemap = readFileSync(join(root, 'sitemap.xml'), 'utf8');
 
-const canonicalHomepage = 'https://nawelyi.github.io/da-bayou-digital-platform/';
+const canonicalHomepage = 'https://dabayousportsbarandgrill.com/';
 const instagramUrl = 'https://www.instagram.com/dabayousportsbargrill/';
 const tiktokUrl = 'https://www.tiktok.com/@da.bayou.sports.b';
 const facebookUrl = 'https://www.facebook.com/share/1KhxuNwdbM/?mibextid=wwXIfr';
