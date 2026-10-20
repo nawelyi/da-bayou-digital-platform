@@ -68,6 +68,7 @@ The following items require confirmation, setup, or final review:
 - `docs/DECISIONS.md` — Design and technical decisions.
 - `docs/TASKS.md` — Prioritized implementation and launch tasks.
 - `docs/IMAGE_ASSETS.md` — Image assets and provenance.
+- `docs/OPENING_SOON.md` — Opening Soon content scope and remaining confirmations.
 - `docs/STATUS.md` — Implementation and deployment status.
 - `docs/SEARCH_CONSOLE.md` — Google Search Console setup and indexing steps.
 
