@@ -6,7 +6,7 @@ Sitio estático de Da Bayou Sports Bar & Grill, preparado para publicación en G
 
 Demo pública para revisión del cliente:
 
-https://nawelyi.github.io/da-bayou-digital-platform/
+https://dabayousportsbarandgrill.com/
 
 GitHub Pages publica automáticamente el contenido de `main` desde la raíz del repositorio.
 
