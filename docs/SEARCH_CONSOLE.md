@@ -1,13 +1,13 @@
-# Google Search Console — pasos después del despliegue
+# Google Search Console — Steps After Deployment
 
-El dominio de producción es `https://dabayousportsbarandgrill.com/`. La preparación técnica de SEO está en el repositorio, pero la verificación y solicitud de indexación requieren acceso autorizado a Google Search Console.
+The production domain is `https://dabayousportsbarandgrill.com/`. Technical SEO preparation is already in the repository, but verification and index requests require authorized access to Google Search Console.
 
-1. Añadir una propiedad **Dominio** para `dabayousportsbarandgrill.com` en Google Search Console (sin `https://`).
-2. Verificar la propiedad añadiendo en Porkbun el registro **TXT** que Google entregue. No inventar ni añadir ningún token hasta obtenerlo.
-3. Una vez publicado y accesible por HTTPS el sitio definitivo, enviar `https://dabayousportsbarandgrill.com/sitemap.xml`.
-4. Usar **Inspección de URLs** para `https://dabayousportsbarandgrill.com/` y solicitar indexación de la página pública.
-5. Revisar resultados de indexación, rendimiento y posibles errores durante los días siguientes.
+1. Add a **Domain property** for `dabayousportsbarandgrill.com` in Google Search Console (without `https://`).
+2. Verify ownership by adding the **TXT DNS record** provided by Google in Porkbun. Do not invent or add any verification token until Google supplies it.
+3. Once the final website is live and accessible over HTTPS, submit `https://dabayousportsbarandgrill.com/sitemap.xml`.
+4. Use **URL Inspection** for `https://dabayousportsbarandgrill.com/` and request indexing for the public homepage.
+5. Review indexing status, search performance, and any reported issues over the following days.
 
-Si Google ofrece el método de prefijo URL en lugar de propiedad Dominio, se puede usar la etiqueta meta de verificación de Google en `index.html` (hay un comentario que indica el lugar). La propiedad Dominio con TXT es preferible porque cubre variantes `www` y sin `www`.
+If a URL-prefix property is used instead of a Domain property, Google's verification meta tag can be added to `index.html` (an HTML comment marks the location). A Domain property verified with a TXT record is preferable because it covers both `www` and non-`www` variations.
 
-Antes de enviar el sitemap, retirar cualquier texto interno de `Client preview` o `For client review` y publicar la versión `Opening Soon` aprobada.
+Before submitting the sitemap for final indexing, remove internal `Client preview` or `For client review` content and publish the approved `Opening Soon` version without those internal notes.
