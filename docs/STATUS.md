@@ -8,7 +8,7 @@ Actualizado: 4 de octubre de 2026.
 - **Rama publicada:** `main`.
 - **Rama en preparación:** `feat/local-seo-social` (pendiente de aprobación, commit y despliegue).
 - **Repositorio:** público para permitir la demostración mediante GitHub Pages.
-- **Demo pública:** https://nawelyi.github.io/da-bayou-digital-platform/
+- **Demo pública:** https://dabayousportsbarandgrill.com/
 - **Servidor local:** `http://127.0.0.1:4173` con `npm run dev`.
 
 ## Validación completada
