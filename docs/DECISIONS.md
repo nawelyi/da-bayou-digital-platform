@@ -1,37 +1,37 @@
-# Decisiones — primera demo
+# Project Decisions — Initial Website
 
-## D-001 — Entrega estática sin dependencias
+## D-001 — Static delivery without dependencies
 
-**Estado:** aceptada para la demo.
+**Status:** Accepted for the initial preview.
 
-La primera versión usa HTML, CSS y JavaScript sin frameworks ni servicios externos. Permite revisar el diseño inmediatamente, reduce riesgos de instalación y mantiene abierta la decisión de hosting o CMS.
+The first version uses HTML, CSS, and JavaScript without frameworks or external application services. This makes the design immediately reviewable, reduces setup risks, and keeps future hosting and CMS choices open.
 
-## D-002 — Dirección visual original
+## D-002 — Original visual direction
 
-**Estado:** propuesta para aprobación.
+**Status:** Proposed for client approval.
 
-Se usan fotografía a gran escala, tonos cálidos y estructura editorial como referencia general del sector. La identidad de Da Bayou se diferencia con morado profundo, dorado, crema, serif editorial y un tono enfocado en comida + Gameday. No se copian marca, contenido ni recursos de parrains.com.
+Large-scale photography, warm colors, and an editorial layout were used as broad references for the restaurant industry. Da Bayou's identity is differentiated by deep purple, gold, cream, editorial serif typography, and a focus on food and Gameday atmosphere. No branding, content, or assets from parrains.com are copied.
 
-## D-003 — Datos no confirmados claramente provisionales
+## D-003 — Unconfirmed information is clearly marked as provisional
 
-**Estado:** aceptada para la demo.
+**Status:** Accepted for the initial preview.
 
-Los datos no entregados por el cliente no se inventan como definitivos. El sitio usa el logo, menú, dirección y redes oficiales, y mantiene horarios, teléfono, eventos y promociones claramente pendientes.
+Information not supplied or confirmed by the client is not presented as final. The site uses the official logo, menu, address, and social links, while business hours, phone number, events, and promotions remain marked as pending.
 
-## D-004 — Customer Club conectado a MailerLite
+## D-004 — Customer Club connected to MailerLite
 
-**Estado:** aceptada para la demo.
+**Status:** Accepted for the initial preview.
 
-La landing pública recopila nombre, email y consentimiento, incorpora el registro al grupo de MailerLite y activa el correo automático de bienvenida.
+The public signup page collects first name, email, and consent, adds subscribers to the MailerLite group, and triggers the automated welcome email.
 
-## D-005 — QR definitivo hacia una URL estable
+## D-005 — Final QR code points to a stable URL
 
-**Estado:** aceptada para la demo.
+**Status:** Accepted for the initial preview.
 
-El QR definitivo apunta a la landing pública estable del Customer Club para evitar reimpresión de materiales.
+The QR code points to the stable public Customer Club signup page to avoid having to reprint materials later.
 
-## D-006 — SEO técnico sin dependencias
+## D-006 — Dependency-free technical SEO
 
-**Estado:** preparado para aprobación.
+**Status:** Implemented and merged into `main`.
 
-El SEO local se implementa directamente en el HTML y con archivos estáticos estándar. No se añaden frameworks, analítica ni dependencias: título, descripción, canonical, metadata social, favicon, JSON-LD, `robots.txt` y `sitemap.xml` permanecen fáciles de auditar y mantener.
+Local SEO is implemented directly in the HTML and standard static files. No frameworks, analytics packages, or additional application dependencies were introduced. The page title, description, canonical URL, social metadata, favicon, JSON-LD, `robots.txt`, and `sitemap.xml` remain easy to audit and maintain.

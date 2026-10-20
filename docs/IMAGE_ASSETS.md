@@ -1,37 +1,37 @@
-# Recursos visuales generados con IA
+# Visual Assets Generated with AI
 
-Modo utilizado: herramienta integrada de generación de imágenes.
+Generation method: integrated image generation tool.
 
 ## `assets/images/da-bayou-hero.jpg`
 
-Imagen hero editorial de un sports bar de Louisiana durante un juego, con ambiente cálido, clientes, pantallas genéricas y comida Cajun. Se pidió espacio oscuro para el titular, sin logos, texto, equipos ni marcas.
+Editorial hero image of a Louisiana sports bar during a game, with warm lighting, guests, generic screens, and Cajun food. The image was requested with a dark area for headline placement and without logos, text, teams, or brands.
 
 ## `assets/images/shrimp-poboy.jpg`
 
-Fotografía editorial de un po'boy de camarones fritos con papas y remoulade, sobre madera oscura, sin logos, texto ni marcas.
+Editorial food photography of a fried shrimp po'boy with fries and remoulade on dark wood, without logos, text, or brands.
 
 ## `assets/images/gameday-wings.jpg`
 
-Fotografía vertical de alitas, cerveza y coctel morado en un sports bar durante Gameday, sin logos, texto, equipos ni marcas.
+Vertical photograph of wings, beer, and a purple cocktail in a sports bar on Gameday, without logos, text, teams, or brands.
 
-Los archivos del repositorio están optimizados como JPEG para uso web. Los originales PNG generados se conservan en el almacenamiento de imágenes de Codex.
+The repository files are optimized as JPEGs for web use. The original generated PNG images were retained in Codex image storage during asset creation.
 
-## Recursos oficiales enviados por el cliente
+## Official Assets Supplied by the Client
 
 ### `assets/images/official-logo.webp`
 
-Fuente: `IMG_5003.jpeg`. Logo oficial usado en header y footer. Se redujo a 720 px de ancho y se convirtió a WebP optimizado para evitar transferir el original de mayor tamaño en cada página.
+Source: `IMG_5003.jpeg`. Official logo used in the header and footer. It was resized to 720 pixels wide and converted to optimized WebP to avoid transferring the larger original image on every page load.
 
 ### `assets/images/menu-appetizers.webp`
 
-Fuente: `IMG_4700.jpeg`. Menu board oficial de appetizers, nachos, soup y salad.
+Source: `IMG_4700.jpeg`. Official menu board covering appetizers, nachos, soup, and salads.
 
 ### `assets/images/menu-sandwiches.webp`
 
-Fuente: `IMG_4701.jpeg`. Menu board oficial de sandwiches, po'boys y burgers.
+Source: `IMG_4701.jpeg`. Official menu board covering sandwiches, po'boys, and burgers.
 
 ### `assets/images/menu-platters.webp`
 
-Fuente: `IMG_4702.jpeg`. Menu board oficial de platters, pizza y sides.
+Source: `IMG_4702.jpeg`. Official menu board covering platters, pizza, and sides.
 
-Las tres imágenes del menú conservan su resolución de origen y se sirven como WebP optimizado para que el texto siga siendo legible al ampliarlas sin cargar los JPEG originales. La interfaz usa carga diferida y dimensiones explícitas para reducir trabajo de carga y evitar saltos de diseño.
+All three menu board images preserve their source resolution and are served as optimized WebP files so the text remains legible when enlarged without loading the original JPEG files. The interface uses lazy loading and explicit image dimensions to reduce loading work and prevent layout shifts.
