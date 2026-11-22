@@ -14,7 +14,7 @@ const instagramUrl = 'https://www.instagram.com/dabayousportsbargrill/';
 const tiktokUrl = 'https://www.tiktok.com/@da.bayou.sports.b';
 const facebookUrl = 'https://www.facebook.com/share/1KhxuNwdbM/?mibextid=wwXIfr';
 
-const requiredSections = ['menu', 'specials', 'events', 'club', 'visit', 'review-notes'];
+const requiredSections = ['menu', 'specials', 'events', 'club', 'visit', 'hours-title'];
 for (const id of requiredSections) {
   assert.match(html, new RegExp(`id=["']${id}["']`), `Missing #${id} section`);
 }
@@ -62,7 +62,9 @@ assert.deepEqual(structuredData.address, {
 assert.ok(structuredData.sameAs.includes(instagramUrl), 'Instagram is missing from Restaurant sameAs');
 assert.ok(structuredData.sameAs.includes(tiktokUrl), 'TikTok is missing from Restaurant sameAs');
 assert.ok(!structuredData.sameAs.includes(facebookUrl), 'Facebook share URL must not be used as a canonical sameAs identity');
-for (const unconfirmedField of ['telephone', 'openingHours', 'openingHoursSpecification', 'geo', 'priceRange', 'aggregateRating', 'review']) {
+assert.deepEqual(structuredData.openingHours, ['Mo 15:00-22:00', 'Tu-Th 11:00-22:00', 'Fr-Sa 11:00-23:00', 'Su 11:00-22:00']);
+assert.doesNotMatch(html, /opening soon|when we open|opening date coming soon/i);
+for (const unconfirmedField of ['telephone', 'openingHoursSpecification', 'geo', 'priceRange', 'aggregateRating', 'review']) {
   assert.ok(!(unconfirmedField in structuredData), `Unconfirmed structured data field must not be present: ${unconfirmedField}`);
 }
 

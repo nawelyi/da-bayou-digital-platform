@@ -57,6 +57,7 @@
           "postalCode": "70769",
           "addressCountry": "US"
         },
+        "openingHours": ["Mo 15:00-22:00", "Tu-Th 11:00-22:00", "Fr-Sa 11:00-23:00", "Su 11:00-22:00"],
         "menu": "https://dabayousportsbarandgrill.com/#menu",
         "sameAs": [
           "https://www.instagram.com/dabayousportsbargrill/",
@@ -65,15 +66,15 @@
       }
     </script>
     <link rel="preload" href="assets/images/da-bayou-hero.jpg" as="image" />
-    <link rel="stylesheet" href="styles.css?v=0.3" />
+    <link rel="stylesheet" href="styles.css?v=0.4" />
     <script src="app.js?v=0.3" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
     <div class="review-banner" role="note">
-      <span>Client preview</span>
-      <p>Hours, phone, and event/promotion details are pending client confirmation.</p>
+      <span>Now open in Prairieville</span>
+      <a href="#visit">Hours &amp; directions →</a>
     </div>
 
     <header class="site-header" data-header>
@@ -112,11 +113,11 @@
         <div class="hero-media" aria-hidden="true"></div>
         <div class="hero-scrim" aria-hidden="true"></div>
         <div class="hero-content page-shell">
-          <p class="eyebrow">Opening Soon • Louisiana flavor • Good times</p>
+          <p class="eyebrow">Prairieville • Louisiana flavor • Good times</p>
           <h1 id="hero-title">Meet us<br /><em>at Da Bayou.</em></h1>
           <p class="hero-intro">
             Big flavor, cold drinks, and a front-row seat to every play — all served with
-            neighborhood hospitality. Opening date coming soon.
+            neighborhood hospitality.
           </p>
           <div class="hero-actions">
             <a class="button button-gold" href="#menu">Explore the menu</a>
@@ -137,14 +138,10 @@
           </div>
           <div class="welcome-copy">
             <p class="lead">
-              Da Bayou will bring together Louisiana-inspired food, a lively sports-bar atmosphere,
+              Da Bayou brings together Louisiana-inspired food, a lively sports-bar atmosphere,
               and the kind of welcome that turns first visits into traditions.
             </p>
-            <p>
-              Whether you're meeting the crew for Gameday, catching live entertainment, or
-              settling in for dinner, there will be plenty to look forward to when we open.
-            </p>
-            <a class="text-link" href="#events">Preview what’s coming <span>→</span></a>
+            <a class="text-link" href="#visit">Plan your visit <span>→</span></a>
           </div>
         </div>
       </section>
@@ -285,7 +282,7 @@
             <p class="eyebrow">Coming Soon</p>
             <h2 id="specials-title">Weekly lunch specials</h2>
             <p>A taste of what’s coming: preview an example week of plate lunches.
-              The opening date and final weekly schedule will be announced soon.</p>
+              The weekly lineup is subject to change.</p>
           </div>
           <div class="special-grid" aria-label="Example weekly lunch specials">
             <article class="special-card">
@@ -340,7 +337,7 @@
           <div class="section-heading centered-heading">
             <p class="eyebrow">Coming Soon • Seasonal favorite</p>
             <h2 id="crawfish-title">Boiled crawfish available in season</h2>
-            <p>After opening, we plan to serve boiled crawfish every day in-house during crawfish season.</p>
+            <p>We plan to serve boiled crawfish every day in-house during crawfish season.</p>
             <p>During the season, Friday business delivery will also offer boiled crawfish
               in addition to the day’s plate lunch. Crawfish delivery orders will need to be called in.</p>
             <p>Seasonal availability and call-in ordering details will be announced before service begins.</p>
@@ -414,8 +411,8 @@
       <section id="visit" class="visit section-pad" aria-labelledby="visit-title">
         <div class="page-shell visit-grid">
           <div class="visit-copy">
-            <p class="eyebrow eyebrow-dark">Opening Soon</p>
-            <h2 id="visit-title">Your future place at Da Bayou.</h2>
+            <p class="eyebrow eyebrow-dark">Visit Da Bayou</p>
+            <h2 id="visit-title">Hours &amp; location.</h2>
             <div class="visit-details">
               <article>
                 <span>Location</span>
@@ -423,8 +420,16 @@
                 <strong>17316 Airline Hwy<br />Prairieville, LA 70769</strong>
                 <p>Prairieville, Louisiana</p>
               </article>
-              <article><span>Hours</span><strong>Open days and hours</strong><p>Operating schedule pending client confirmation</p></article>
-              <article><span>Contact</span><strong>Phone and email</strong><p>Business contact details pending client confirmation</p></article>
+              <article aria-labelledby="hours-title">
+                <h3 id="hours-title">Restaurant hours</h3>
+                <dl class="restaurant-hours">
+                  <div><dt>Monday</dt><dd>3 PM – 10 PM</dd></div>
+                  <div><dt>Tuesday – Thursday</dt><dd>11 AM – 10 PM</dd></div>
+                  <div><dt>Friday – Saturday</dt><dd>11 AM – 11 PM</dd></div>
+                  <div><dt>Sunday</dt><dd>11 AM – 10 PM</dd></div>
+                </dl>
+                <p class="kitchen-break">The kitchen closes from <b>2 PM to 3 PM</b> Tuesday through Sunday.</p>
+              </article>
             </div>
             <a class="button button-outline" href="https://www.google.com/maps/search/?api=1&amp;query=17316+Airline+Hwy%2C+Prairieville%2C+LA+70769" target="_blank" rel="noopener">Get directions</a>
           </div>
@@ -445,21 +450,6 @@
         </div>
       </section>
 
-      <section id="review-notes" class="approval section-pad" aria-labelledby="approval-title">
-        <div class="page-shell approval-grid">
-          <div>
-            <p class="eyebrow">For client review</p>
-            <h2 id="approval-title">Is this the right Da Bayou?</h2>
-          </div>
-          <ol>
-            <li><span>01</span><p><strong>Look &amp; feel</strong> — approve the warm, energetic, Louisiana sports-bar direction.</p></li>
-            <li><span>02</span><p><strong>Content</strong> — official logo, menu boards, address, and social links are integrated. Remaining: hours, phone, and event/promotion schedule.</p></li>
-            <li><span>03</span><p><strong>Customer Club</strong> — MailerLite registration, consent capture, welcome automation, and QR are active for review.</p></li>
-          </ol>
-          <p>Opening Soon preview: lunch specials, business delivery, and seasonal crawfish are included.
-            Opening date, phone, delivery coverage, prices, and final weekly schedule await confirmation.</p>
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer">
@@ -497,11 +487,10 @@
             aria-label="Visit Da Bayou Sports Bar &amp; Grill on TikTok (opens in a new tab)"
           >TikTok</a>
         </div>
-        <div><span class="footer-label">Visit</span><span>17316 Airline Hwy<br />Prairieville, LA 70769</span><span>Hours and contact details pending approval</span></div>
+        <div><span class="footer-label">Visit</span><span>17316 Airline Hwy<br />Prairieville, LA 70769</span><a href="#visit">Restaurant &amp; kitchen hours</a></div>
       </div>
       <div class="page-shell footer-bottom">
-        <p>© <span data-year></span> Da Bayou Sports Bar &amp; Grill. Client preview.</p>
-        <p>Original concept prepared for design approval.</p>
+        <p>© <span data-year></span> Da Bayou Sports Bar &amp; Grill.</p>
       </div>
     </footer>
   </body>

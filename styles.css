@@ -179,6 +179,13 @@ p { color: var(--muted); }
 .visit-details span { display: block; color: var(--plum-700); font-size: 0.67rem; font-weight: 900; letter-spacing: 0.14em; text-transform: uppercase; }
 .visit-details strong { display: block; margin: 5px 0; font-family: var(--serif); font-size: 1.35rem; }
 .visit-details p { margin: 0; font-size: 0.82rem; }
+.review-banner a { color: inherit; font-size: 0.85rem; text-decoration: underline; }
+.visit-details h3 { margin: 0; color: var(--plum-900); font: 1.65rem var(--serif); }
+.restaurant-hours { margin: 12px 0 18px; }
+.restaurant-hours div { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.restaurant-hours dd { margin: 0; white-space: nowrap; font-weight: 700; }
+.visit-details .kitchen-break { padding: 10px 14px; border-left: 3px solid var(--gold-500); background: var(--cream-50); font-size: 0.95rem; }
+
 .map-preview { position: relative; min-height: 620px; overflow: hidden; background-color: #e6dbc8; background-image: linear-gradient(rgba(37,18,54,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(37,18,54,.07) 1px, transparent 1px); background-size: 56px 56px; }
 .map-preview::after { content: ""; position: absolute; inset: 0; background: linear-gradient(135deg, transparent 49.5%, rgba(255,255,255,.55) 49.5% 51%, transparent 51%); background-size: 180px 180px; }
 .map-road { position: absolute; z-index: 1; width: 120%; height: 12px; left: -10%; background: rgba(255,255,255,.92); box-shadow: 0 0 0 2px rgba(37,18,54,.11); transform: rotate(-25deg); }
